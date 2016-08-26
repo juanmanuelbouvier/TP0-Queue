@@ -1,11 +1,7 @@
-# 75.10 Técnicas de Diseño - Template project
- ![Build Status](https://travis-ci.org/7510-tecnicas-de-disenio/template.svg?branch=master) 
+# 75.10 Técnicas de Diseño - TP0 Queue
+#### Juan Manuel Bouvier - 95548
 
-Template Gradle project
+## Objetivo TP0
+Implementar una queue aplicando buenas prácticas de programación.
 
-* Gradle
-* Checkstyle
-* Findbugs
-* PMD
-* JaCoCo
 
