@@ -1,5 +1,3 @@
-package ar.fiuba.tdd.template;
-
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
