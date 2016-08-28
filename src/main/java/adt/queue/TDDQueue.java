@@ -1,18 +1,18 @@
 package adt.queue;
 
-import adt.queue.nodes.Node;
 import adt.queue.nodes.FullNode;
+import adt.queue.nodes.Node;
 import adt.queue.nodes.NullNode;
 
-public class TDDQueue<T extends Object> implements Queue<T> {
+class TDDQueue<T> implements Queue<T> {
     private Node<T> top;
 
-    public TDDQueue() {
-        this.top = new NullNode<T>();
+    TDDQueue() {
+        this.top = new NullNode<>();
     }
 
-    public TDDQueue(T top) {
-        this.top = new FullNode<T>(top);
+    TDDQueue(T top) {
+        this.top = new FullNode<>(top);
     }
 
     @Override
