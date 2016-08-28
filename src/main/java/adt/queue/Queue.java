@@ -1,3 +1,5 @@
+package adt.queue;
+
 public interface Queue<T> {
     boolean isEmpty();
     int size();

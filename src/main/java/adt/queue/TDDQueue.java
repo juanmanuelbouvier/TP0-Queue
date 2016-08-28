@@ -1,5 +1,11 @@
+package adt.queue;
+
+import adt.queue.nodes.Node;
+import adt.queue.nodes.FullNode;
+import adt.queue.nodes.NullNode;
+
 public class TDDQueue<T extends Object> implements Queue<T> {
-    private AbstractNode<T> top;
+    private Node<T> top;
 
     public TDDQueue() {
         this.top = new NullNode<T>();
@@ -21,7 +27,7 @@ public class TDDQueue<T extends Object> implements Queue<T> {
 
     @Override
     public void add(T item) {
-
+        this.top = this.top.addElementToTailTop(item);
     }
 
     @Override
