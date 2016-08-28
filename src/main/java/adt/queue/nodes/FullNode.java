@@ -36,6 +36,10 @@ public class FullNode<E> implements Node<E> {
     @Override
     public Node<E> addElementToTailTop(E element) {
         findTailEnd().setNextNode(new FullNode<>(element));
+        return getTopOnElementAdded();
+    }
+
+    private Node<E> getTopOnElementAdded() {
         return this;
     }
 

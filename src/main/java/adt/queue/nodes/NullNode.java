@@ -33,6 +33,10 @@ public class NullNode<E> implements Node<E> {
 
     @Override
     public Node<E> addElementToTailTop(E element) {
-        return new FullNode<E>(element);
+        return getTopOnElementAdded(element);
+    }
+
+    private Node<E> getTopOnElementAdded(E element) {
+        return new FullNode<>(element);
     }
 }
